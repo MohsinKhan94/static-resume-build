@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    background-color: #F7F7F7; /* Light Gray */
+    color: #333333; /* Dark Gray for text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for Two Columns Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50; /* Navy Blue */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Button */
+button {
+    background-color: #1ABC9C; /* Teal */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #16A085; /* Darker Teal */
+}
+
+/* Each Section */
+.section {
+    padding: 20px;
+    background-color: #FFFFFF; /* White for section background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in the section */
+}
+
+/* Education and Skills Background Color */
+.education,
+.skills {
+    background-color: #E9ECEF; /* Light Gray Background */
+}
+
+/* Headings */
+h2 {
+    background-color: #2C3E50; /* Navy Blue */
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 7px;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+}
+
+/* Objective Section Paragraph */
+.objective p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Icons */
+.contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact i {
+    font-size: 30px; /* Larger icons */
+    margin-right: 8px;
+    color: #1ABC9C; /* Teal for icons */
+}
+
+/* List Styles */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: #E9ECEF; /* Light Gray Background for List Items */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212; /* Dark background */
+    color: #FFFFFF; /* Light text */
+}
+
+header.dark-theme {
+    background-color: #1E1E1E; /* Dark header background */
+    color: #FFFFFF; /* Light text for header */
+}
+
+button.dark-theme {
+    background-color: #00C853; /* Green button */
+    color: #FFFFFF; /* Light text for button */
+}
+
+.section.dark-theme {
+    background-color: #1E1E1E; /* Dark section background */
+    color: #FFFFFF; /* Light text for sections */
+}
+
+.skills.dark-theme,
+.education.dark-theme {
+    background-color: #1E1E1E; /* Darker section background */
+    color: #FFFFFF; /* Light text */
+}
+
+/* Ensure list items are visible in dark mode */
+.skills.dark-theme ul li {
+    background-color: #333333; /* Darker background for list items */
+    color: #FFFFFF; /* Light text for list items */
+}
+
+.contact a.dark-theme {
+    color: #1ABC9C; /* Teal color for links */
+}
+
+/* Update button styles for dark theme */
+button {
+    background-color: #1ABC9C; /* Teal */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #16A085; /* Darker Teal */
+}
+
+/* Ensure icons are visible in dark mode */
+.contact i {
+    color: #1ABC9C; /* Teal for icons */
+}
+    
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+    
+    header p, button {
+        font-size: 14px;
+    }
+    
+    h2, h3 {
+        font-size: 20px;
+    }
+    
+    .objective p {
+        font-size: 16px;
+    }
+}
